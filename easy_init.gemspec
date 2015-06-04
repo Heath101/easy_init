@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Heath Attig"]
   spec.email         = ["heath.attig@daveramsey.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Easily create ruby objects with attributes"
+  spec.description   = "Easy Init provides modules that can be included in your project to quickly and easily initialize objects in ruby."
+  spec.homepage      = "https://github.com/Heath101/easy_init.git"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
@@ -28,4 +28,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec", ">= 3.0"
 end
