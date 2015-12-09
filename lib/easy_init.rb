@@ -1,5 +1,6 @@
 require "easy_init/version"
+require_relative "accessor_initializable"
 
 module EasyInit
-  # Your code goes here...
+
 end
