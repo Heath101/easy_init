@@ -1,6 +1,5 @@
 # EasyInit
 
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -19,7 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class Foo
+  include AccessorInitializable
+  attr_accessor :bar, :baz
+end
+
+foo = Foo.new({bar: "bar", baz: "baz", quux: "quux"})
+foo.bar # => "bar"
+foo.baz # => "baz"
+foo.quux # NoMethodError: undefined method `quux' for #<Foo:0x007faa822b20a8 @bar="bar", @baz="baz">
+```
 
 ## Development
 
