@@ -17,4 +17,8 @@ describe AccessorInitializable do
     expect(model.foo).to eq nil
     expect{model.baz}.to raise_error
   end
+
+  it "doesn't blow up when given nil as parameter" do
+    expect{ DumbModel.new(nil) }.not_to raise_error
+  end
 end
